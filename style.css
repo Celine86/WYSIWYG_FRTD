@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --main-bg-color: rgb(34, 32, 35);
+    --primary: #1DD2AF;
+    --secondary: #fff600;
+    --dark: rgb(0, 0, 0); 
+    --nocolor: rgba(0, 0, 0, 0);
+}
+body{
+    background-color: var(--main-bg-color);
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    padding: 1rem 0;
+}
+li {
+    list-style: none;
+}
+input {
+    background-color: var(--nocolor);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: 0.25rem;
+    margin: 0.5rem 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+.underline {
+    text-decoration-line: underline;
+}
+.btn {
+    border: 1px solid var(--primary);
+    background-color: var(--dark);
+    color: var(--primary);
+    padding: 0.15rem;
+    width: auto;
+    height: 2rem;
+}
+.btn:hover {
+    cursor: pointer;
+    border: 1px solid var(--secondary);
+    background-color: var(--dark);
+    color: var(--secondary);
+}
+.toolbar .btn {
+    border: 1px solid var(--primary);
+    background-color: var(--dark);
+    color: var(--primary);
+    padding: 0.15rem;
+    width: 2rem;
+    height: 2rem;
+}
+.toolbar .btn:hover {
+    cursor: pointer;
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+}
+.connexion .btn {
+    margin: 1rem 0;
+}
+.connexion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 0.25rem solid var(--primary);
+    width: 25rem;
+    min-height: 6rem; 
+    padding: 0.5rem;
+}
+.editor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 0.25rem solid var(--primary);
+    width: 50rem;
+    min-height: 30rem; 
+}
+.toolbar {
+    border: 0.15rem solid var(--nocolor);
+    width: 48rem;
+    height: 2rem;
+    padding: 0.15rem;
+    margin: 0.25rem 0;
+}
+.title {
+    border: 0.05rem solid var(--primary);
+    width: 48rem;
+    height: 1rem; 
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+.content {
+    border: 0.05rem solid var(--primary);
+    width: 48rem;
+    min-height: 15rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+.actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 48rem;
+}

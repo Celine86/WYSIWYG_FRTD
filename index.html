@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>RichText Editor</title>
+</head>
+<body>
+    <h1>RichText Editor</h1>
+    <div class="connexion">
+        <form action="POST" id="login">
+            <ul>
+                <li><label for="username">Username</label><br><input type="text" id="username" name="username" placeholder="Username"></li>
+                <li><label for="password">Password</label><br><input type="password" id="password" name="password" placeholder="Password"></li>
+            </ul>
+                <button class="btn" type="submit" id="submitlogin">Valider</button>
+        </form>
+    </div>
+    <div class="editor">
+        <div class="toolbar">
+            <button class="btn bold" onclick="commande('bold');">G</button>
+            <button class="btn italic" onclick="commande('italic');">I</button>
+            <button class="btn underline" onclick="commande('underline');">U</button>
+        </div>
+        <div id="post--title" class="title" contentEditable></div>
+        <div id="post--content" class="content" contentEditable></div>
+        <div class="actions">
+            <button class="btn">Valider</button>
+        </div>
+    </div>
+    <script src="./js/conf.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/editor.js"></script>
+</body>
+</html>

@@ -17,13 +17,20 @@ if (el) {
                             username,
                             password
                         }),
-                        headers: { 'Content-Type': 'application/json' }
-                })
-                response = await response.json()
-                localStorage.setItem("token", response.token);
-                alert ("Vous êtes connecté !");
+                        headers: { 
+                            'Content-Type': 'application/json',
+                        }
+                }) 
+                if(response.status === 200) { 
+                    response = await response.json()
+                    sessionStorage.setItem("token", response.token)
+                    sessionStorage.setItem("username", response.username)
+                    window.location = 'editor.html';
+                } else { 
+                    alert ("Mot de passe ou Identifiant incorrect");
+                }
             } catch (error) {
-                alert ("connexion impossible");
+                alert ("Oups !");
             }
         }
     });

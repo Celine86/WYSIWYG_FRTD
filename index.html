@@ -7,30 +7,21 @@
     <title>RichText Editor</title>
 </head>
 <body>
-    <h1>RichText Editor</h1>
-    <div class="connexion">
-        <form action="POST" id="login">
-            <ul>
-                <li><label for="username">Username</label><br><input type="text" id="username" name="username" placeholder="Username"></li>
-                <li><label for="password">Password</label><br><input type="password" id="password" name="password" placeholder="Password"></li>
-            </ul>
-                <button class="btn" type="submit" id="submitlogin">Valider</button>
-        </form>
-    </div>
-    <div class="editor">
-        <div class="toolbar">
-            <button class="btn bold" onclick="commande('bold');">G</button>
-            <button class="btn italic" onclick="commande('italic');">I</button>
-            <button class="btn underline" onclick="commande('underline');">U</button>
+    <header>
+        <div class="logo"><img src="./assets/images/Cat.png"></div>
+        <span id="connectedUser"></span>
+    </header>
+    <main>
+        <div class="connexion">
+            <form action="POST" id="login">
+                <label for="username">Username</label><input type="text" id="username" name="username" placeholder="Username" required>
+                <label for="password">Password</label><input type="password" id="password" name="password" placeholder="Password" required>
+                <button class="btn" type="submit">Valider</button>
+            </form>
         </div>
-        <div id="post--title" class="title" contentEditable></div>
-        <div id="post--content" class="content" contentEditable></div>
-        <div class="actions">
-            <button class="btn">Valider</button>
-        </div>
-    </div>
-    <script src="./js/conf.js"></script>
-    <script src="./js/login.js"></script>
-    <script src="./js/editor.js"></script>
+    </main>
+    <script src="./scripts/conf.js"></script>
+    <script src="./scripts/loggedIn.js"></script>
+    <script src="./scripts/login.js"></script>
 </body>
 </html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Editeur</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="./assets/images/Cat.png"></div>
+        <div class="userInfos">
+            <span id="connectedUser"></span>
+            <span id="logout"></span>
+        </div>
+    </header>
+    <main>
+        <div class="editor">
+            <div class="toolbar">
+                <button class="btn bold" onclick="commande('bold');">G</button>
+                <button class="btn italic" onclick="commande('italic');">I</button>
+                <button class="btn underline" onclick="commande('underline');">U</button>
+                <button class="btn" onclick="goImages()">IMG</button>
+            </div>
+                <form action="POST" id="sendPost">
+                <div id="title" class="title" contentEditable></div>
+                <div id="content" class="content" contentEditable></div>
+                <div class="actions">
+                    <button class="btn" type="submit">Valider</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="./scripts/conf.js"></script>
+    <script src="./scripts/auth.js"></script>
+    <script src="./scripts/logout.js"></script>
+    <script src="./scripts/editor.js"></script>
+    <script src="./scripts/createPost.js"></script>
+    <script src="./scripts/navigate.js"></script>
+</body>
+</html>

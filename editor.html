@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="logo"><img src="./assets/images/Cat.png"></div>
+        <a href="./editor.html"><div class="logo"><img src="./assets/images/Cat.png"></div></a>
         <div class="userInfos">
             <span id="connectedUser"></span>
             <span id="logout"></span>
@@ -20,21 +20,25 @@
                 <button class="btn bold" onclick="commande('bold');">G</button>
                 <button class="btn italic" onclick="commande('italic');">I</button>
                 <button class="btn underline" onclick="commande('underline');">U</button>
-                <button class="btn" onclick="goImages()">IMG</button>
+                <button class="btn" onclick="commande('insertImage')">IMG</button>
             </div>
-                <form action="POST" id="sendPost">
+            <div>
+                <button class="btn" onclick="save()">Quick Save</button>
+            </div>
+            <!--form action="POST" id="sendPost">
                 <div id="title" class="title" contentEditable></div>
                 <div id="content" class="content" contentEditable></div>
                 <div class="actions">
                     <button class="btn" type="submit">Valider</button>
                 </div>
-            </form>
+            </form-->
         </div>
     </main>
     <script src="./scripts/conf.js"></script>
     <script src="./scripts/auth.js"></script>
     <script src="./scripts/logout.js"></script>
     <script src="./scripts/editor.js"></script>
+    <script src="./scripts/quickSave.js"></script>
     <script src="./scripts/createPost.js"></script>
     <script src="./scripts/navigate.js"></script>
 </body>

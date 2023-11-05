@@ -148,3 +148,39 @@ form {
     justify-content: end;
     width: 48rem;
 }
+.templateImgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+.templateImgs a {
+    text-decoration: none;
+    color: var(--primary);
+}
+.childImg {
+    border: 1px solid var(--primary);
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+.childImg:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.childImg img {
+    width: 200px;
+    height: auto;
+}
+.templateMyImg {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+.childMyImg {
+    border: 1px solid var(--primary);
+    padding: 0.5rem;
+    margin: 0.5rem;
+}

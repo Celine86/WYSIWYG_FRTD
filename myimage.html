@@ -16,21 +16,20 @@
         </div>
     </header>
     <main>
-        <h1>IMAGES</h1>
-        <section id="allImgs" class="templateImgs">
-            <template id="templateImgs">
-                <a id="imgLink" href="#">
-                <div class="childImg">
-                    <img id="imgUrl" src="#">
-                    <p id="imgTitle">Title</p>
+        <h1>MY IMAGE</h1>
+        <section id="myImg" class="templateMyImg">
+            <template id="templateMyImg">
+                <div class="childMyImg">
+                    <img id="myImgUrl" src="#">
+                    <p id="myImgTitle">Title</p>
+                    <button class='btn' id='getMyImgUrl' onclick="getMyImgUrl()">Insérer</button>
+                    <button class='btn' id='dontGetMyImgUrl' onclick="dontGetMyImgUrl()">Abandonner</button>
                 </div>
-                </a>
-            </template>    
+            </template>
         </section>
     </main>
     <script src="./scripts/conf.js"></script>
     <script src="./scripts/auth.js"></script>
-    <script src="./scripts/fetchImages.js"></script>
     <script src="./scripts/clickImage.js"></script>
     <script src="./scripts/logout.js"></script>
 </body>

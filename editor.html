@@ -11,7 +11,10 @@
         <a href="./editor.html"><div class="logo"><img src="./assets/images/Cat.png"></div></a>
         <div class="userInfos">
             <span id="connectedUser"></span>
-            <span id="logout"></span>
+            <div class="userCTA">
+                <a href="./editor.html"><img src="./assets/images/home_white.png"></a>
+                <img id="logout" src="./assets/images/logout_white.png">
+            </div>
         </div>
     </header>
     <main>
@@ -20,10 +23,16 @@
                 <button class="btn bold" onclick="commande('bold');">G</button>
                 <button class="btn italic" onclick="commande('italic');">I</button>
                 <button class="btn underline" onclick="commande('underline');">U</button>
+                <button class="btn iconbtn" onclick="commande('justifyleft');"><img src="./assets/images/align_left_icon.png"></button>
+                <button class="btn" onclick="commande('justifycenter');"><img src="./assets/images/align_center_icon.png"></button>
+                <button class="btn" onclick="commande('justifyright');"><img src="./assets/images/align_right_icon.png"></button>
                 <button class="btn" onclick="commande('insertImage')">IMG</button>
             </div>
-            <div>
-                <button class="btn" onclick="save()">Quick Save</button>
+            <div class="draft">
+                <div class="actions">
+                    <button class="btn" onclick="save()">Enregistrer Brouillon</button>
+                    <button class="btn" onclick="deleteDraft()">Supprimer Brouillon</button>
+                </div>
             </div>
             <form action="POST" id="sendPost">
                 <div id="title" class="title" contentEditable></div>
@@ -39,6 +48,7 @@
     <script src="./scripts/logout.js"></script>
     <script src="./scripts/editor.js"></script>
     <script src="./scripts/quickSave.js"></script>
+    <script src="./scripts/deleteDraft.js"></script>
     <script src="./scripts/createPost.js"></script>
     <script src="./scripts/navigate.js"></script>
 </body>

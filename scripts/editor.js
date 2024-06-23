@@ -7,6 +7,8 @@ function commande(name, arg) {
     switch (name) {
       case "insertImage":
         if(!myImgUrl){
+          localStorage.setItem('title', title.innerHTML);
+          localStorage.setItem('content', content.innerHTML);
           window.location = 'images.html';
         } else {
           let imgUrl =  localStorage.getItem("myImgUrl")

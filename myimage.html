@@ -12,7 +12,10 @@
         <a href="./editor.html"><div class="logo"><img src="./assets/images/Cat.png"></div></a>
         <div class="userInfos">
             <span id="connectedUser"></span>
-            <span id="logout"></span>
+            <div class="userCTA">
+                <a href="./editor.html"><img src="./assets/images/home_white.png"></a>
+                <img id="logout" src="./assets/images/logout_white.png">
+            </div>
         </div>
     </header>
     <main>
@@ -22,8 +25,10 @@
                 <div class="childMyImg">
                     <img id="myImgUrl" src="#">
                     <p id="myImgTitle">Title</p>
-                    <button class='btn' id='getMyImgUrl' onclick="getMyImgUrl()">Insérer</button>
-                    <button class='btn' id='dontGetMyImgUrl' onclick="dontGetMyImgUrl()">Abandonner</button>
+                    <div class="actions">
+                        <button class='btn' id='getMyImgUrl' onclick="getMyImgUrl()">Insérer</button>
+                        <button class='btn' id='dontGetMyImgUrl' onclick="dontGetMyImgUrl()">Abandonner</button>    
+                    </div>
                 </div>
             </template>
         </section>

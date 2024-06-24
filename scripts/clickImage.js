@@ -21,10 +21,11 @@ async function fetchMyImg() {
             seeImg.getElementById('myImgUrl').src = img.imageUrl
             document.getElementById('myImg').appendChild(seeImg)  
         } else {
-            throw new Error(response.status)
+            console.log(response)
+            //throw new Error(response.status)
         }
     }catch(error) {
-    console.log(error)
+        console.log(error)
     }
 }
 fetchMyImg();

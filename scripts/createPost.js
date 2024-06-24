@@ -25,9 +25,10 @@ document.getElementById('sendPost').addEventListener('submit', async function se
                     document.location.reload();
                 } else { 
                     alert ("L'article n'a pas pu être posté");
+                    console.log(response)
                 }
             } catch (error) {
-                alert ("Oups !");
+                console.log(error)
             }
         }
 }) 

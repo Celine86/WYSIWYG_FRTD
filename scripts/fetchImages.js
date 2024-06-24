@@ -18,11 +18,11 @@ async function showImages() {
                 seeImg.getElementById('imgLink').href = `myimage.html?id=${img.id}`
                 document.getElementById('allImgs').appendChild(seeImg)  
             }
-        } else { 
-            alert ("Pas d'images");
+        } else {
+            console.log(response)
         }
     } catch (error) {
-        alert ("Oups Images !");
+        console.log(error)
     }
 }
 showImages();

@@ -30,7 +30,7 @@ if (el) {
                     alert ("Mot de passe ou Identifiant incorrect");
                 }
             } catch (error) {
-                alert ("Oups !");
+                console.log(error);
             }
         }
     });

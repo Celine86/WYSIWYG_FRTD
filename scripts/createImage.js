@@ -12,13 +12,12 @@ document.getElementById('uploadForm').addEventListener('submit', async function(
             headers: { 
                 Authorization: "Bearer " + sessionStorage.getItem("token"),
                 'Accept': 'application/json',
-                //'Content-Type': 'multipart/form-data'
         }
         }) 
-        if(response.status === 200) { 
+        if(response.status === 200) {
             console.log(response)
         } else { 
-            console.log("NOK");
+            console.log(response);
         }
     } catch (error) {
         console.log(error);
